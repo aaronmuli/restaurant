@@ -80,9 +80,17 @@ section {
     background-color: var(--red-secondary-color);
 }
 
+#explore-btn:hover {
+    background-color: var(--red-primary-color);
+}
+
 #menu-btn {
     background-color: transparent;
     color: #fff;
+}
+
+#menu-btn:hover {
+    color: var(--red-primary-color);
 }
 
 .btn-container {

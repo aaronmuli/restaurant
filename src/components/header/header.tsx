@@ -1,23 +1,29 @@
 import './header.css';
+import { NavLink, Link } from "react-router";
 import { IoSearch } from 'react-icons/io5';
 import { MdOutlineShoppingCart } from "react-icons/md";
 
 const Header = () => {
+  
   return (
     <header>
-        <span>La Piazetta</span>
+        <span><Link to='/'>La Piazetta</Link></span>
         <ul>
-            <li>Home</li>
-            <li>Menu</li>
-            <li>About Us</li>
-            <li>Facility</li>
+            <NavLink to='/' 
+              className={({ isActive }) =>
+              isActive ? "active" : ""}>
+                Home
+            </NavLink>
+            <NavLink to='menu'>Menu</NavLink>
+            <NavLink to='about'>About Us</NavLink>
+            <NavLink to='facility'>Facility</NavLink>
         </ul>
         <ul>
-            <li><IoSearch color='#fff' size={25} /></li>
-            <li><MdOutlineShoppingCart color='#fff' size={25} /></li>
-            <li>
+            <NavLink to='search'><IoSearch color='#fff' size={25} /></NavLink>
+            <NavLink to='cart'><MdOutlineShoppingCart color='#fff' size={25} /></NavLink>
+            <NavLink className='active-remove' to='login'>
                 <button>Login</button>
-            </li>
+            </NavLink>
         </ul>
     </header>
   )

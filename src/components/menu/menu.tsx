@@ -1,8 +1,6 @@
-import React from 'react'
-
 const Menu = () => {
   return (
-    <div>Menu</div>
+    <div className="container">Menu</div>
   )
 }
 

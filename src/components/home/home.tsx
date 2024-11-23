@@ -2,6 +2,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 import { TbArmchair, TbTruckDelivery, TbPaperBag  } from "react-icons/tb";
 import './home.css';
 import IMAGE from '../../assets/bg.png';
+import { NavLink } from "react-router";
 
 const Home = () => {
     return (
@@ -17,8 +18,13 @@ const Home = () => {
                         families looking to enjoy a genuine Italian dining
                         experience in a cozy, welcoming atmosphere.</p>
                     <div>
-                        <button className="btn-container" id='explore-btn'>Explore</button>
-                        <button className="btn-container" id="menu-btn">See Menu <FiArrowUpRight size={20} color="#ff533d"/></button>
+                        <NavLink to='explore'>
+                            <button className="btn-container" id='explore-btn'>Explore</button>
+                        </NavLink>
+                        
+                        <NavLink to='menu'>
+                            <button className="btn-container" id="menu-btn">See Menu <FiArrowUpRight size={20} color="#ff533d"/></button>
+                        </NavLink>
                     </div>
                 </div>
                 <div className="container" id="right-hero">

@@ -18,12 +18,19 @@ ul {
     gap: 2rem;
 }
 
-li {
-    list-style: none;
+a {
+    text-decoration: none;
+    color: #fff;
     font-weight: medium;
+    padding: 2px;
 }
 
-li button {
+a:hover {
+    cursor: pointer;
+    color: beige;
+}
+
+a button {
     border-radius: 10px;
     border: 0;
     padding: 12px;
@@ -32,13 +39,26 @@ li button {
     font-weight: bold;
 }
 
-li button:hover {
+a button:hover {
     background-color: var(--red-primary-color);
     cursor: pointer;
 }
 
-span {
+span a {
     color: var(--red-primary-color);
     font-size: large;
     font-weight: bold;
+}
+
+span a:hover {
+    cursor: pointer;
+    color: var(--red-primary-color);
+}
+
+.active {
+    border-bottom: 3px var(--red-secondary-color) solid;
+}
+
+.active-remove {
+    border: 0px;
 }
