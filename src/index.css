@@ -1,0 +1,20 @@
+:root {
+  
+  --red-primary-color: #ff2003;
+  --red-secondary-color: #ff533d;
+  --brown-dark-color: rgb(66, 4, 4);
+  --black-bg-color: #0d1215;
+  
+  font-family: Kanit ,Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}

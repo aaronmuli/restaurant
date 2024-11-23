@@ -1,0 +1,44 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    background-color: var(--black-bg-color);
+    color: #fff;
+    padding: 0px 30px 0px 30px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+li {
+    list-style: none;
+    font-weight: medium;
+}
+
+li button {
+    border-radius: 10px;
+    border: 0;
+    padding: 12px;
+    background-color: var(--red-secondary-color);
+    color: #fff;
+    font-weight: bold;
+}
+
+li button:hover {
+    background-color: var(--red-primary-color);
+    cursor: pointer;
+}
+
+span {
+    color: var(--red-primary-color);
+    font-size: large;
+    font-weight: bold;
+}
