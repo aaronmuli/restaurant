@@ -18,3 +18,7 @@ body {
   padding: 0px;
   margin: 0px;
 }
+
+p {
+  font-weight: 300;
+}

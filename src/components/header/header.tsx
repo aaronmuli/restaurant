@@ -7,7 +7,7 @@ const Header = () => {
   
   return (
     <header>
-        <span><Link to='/'>La Piazetta</Link></span>
+        <span><Link to='/'>La Piazzetta &trade;</Link></span>
         <ul>
             <NavLink to='/' 
               className={({ isActive }) =>

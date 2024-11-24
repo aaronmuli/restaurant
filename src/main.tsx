@@ -24,6 +24,7 @@ createRoot(document.getElementById('root')!).render(
             <Route path='/login' element={<Login />} />
             <Route path='/search' element={<Search />} />
           </Routes>
+          {/* <Footer /> */}
       </StrictMode>,
     </BrowserRouter>
 )

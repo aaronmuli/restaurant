@@ -3,6 +3,7 @@ import { TbArmchair, TbTruckDelivery, TbPaperBag  } from "react-icons/tb";
 import './home.css';
 import IMAGE from '../../assets/bg.png';
 import { NavLink } from "react-router";
+import Footer from '../footer/footer.tsx';
 
 const Home = () => {
     return (
@@ -35,19 +36,20 @@ const Home = () => {
                 <p id="benefits-p">Why <span id="benefits-span">La Piazzetta?</span></p>
                 <div id="benefits">
                     <div className="benefit">
-                        <TbArmchair size={80} color="#ff533d"/>
+                        <TbArmchair size={90} color="#ff533d"/>
                         <p>Outdoor Seating</p>
                     </div>
                     <div className="benefit">
-                        <TbTruckDelivery size={80} color="#ff533d"/>
+                        <TbTruckDelivery size={90} color="#ff533d"/>
                         <p>Delivery</p>
                     </div>
                     <div className="benefit">
-                        <TbPaperBag size={80} color="#ff533d"/>
+                        <TbPaperBag size={90} color="#ff533d"/>
                         <p>Takeaway</p>
                     </div>
                 </div>
             </section>
+            <Footer />
         </div>
     )
 }

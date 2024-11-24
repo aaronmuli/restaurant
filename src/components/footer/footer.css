@@ -1,0 +1,66 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    background-color: var(--black-bg-color);
+    color: #fff;
+}
+
+h3 {
+    color: var(--red-primary-color);
+}
+
+ul {
+    display: flex;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+form {
+    margin: 5px 0px 5px 0px;
+}
+
+input {
+    padding: 12px;
+    border: 0px;
+    border-radius: 10px;
+    margin-right: 6px;
+}
+
+button {
+    border-radius: 10px;
+    border: 0;
+    padding: 12px;
+    background-color: var(--red-secondary-color);
+    color: #fff;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: var(--red-primary-color);
+    cursor: pointer;
+}
+
+.container {
+    padding: 0px 30px 0px 30px;
+}
+
+.sub-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-details:hover {
+    cursor: pointer;
+}
+
+#info, #map {
+    padding-bottom: 20px;
+}
