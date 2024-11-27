@@ -32,6 +32,11 @@ input {
     margin-right: 6px;
 }
 
+iframe {
+    border: 0;
+    border-radius: 10px;
+}
+
 button {
     border-radius: 10px;
     border: 0;
