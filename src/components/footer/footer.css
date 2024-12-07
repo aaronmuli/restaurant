@@ -64,6 +64,7 @@ button:hover {
 
 .contact-details:hover {
     cursor: pointer;
+    color: var(--red-primary-color);
 }
 
 #info, #map {

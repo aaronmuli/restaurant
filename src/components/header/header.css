@@ -30,7 +30,7 @@ a {
 
 a:hover {
     cursor: pointer;
-    color: beige;
+    color: var(--red-secondary-color);
 }
 
 a button {
@@ -64,4 +64,94 @@ span a:hover {
 
 .active-remove {
     border: 0px;
+}
+
+#mobile-menu-container {
+    display: none;
+}
+
+
+
+/* tablets and mobile */
+@media only screen  and (max-width: 768px){
+
+    header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    a button {
+        border-radius: 10px;
+        border: 0;
+        padding: 12px;
+        background-color: transparent;
+        color: #fff;
+        font-weight: bold;
+    }
+    
+    a button:hover {
+        border-radius: 10px;
+        background-color: var(--red-primary-color);
+        cursor: pointer;
+    }
+
+    #mobile-menu-container {
+        display: block;
+    }
+
+    .desktop-menu {
+        display: none;
+    }
+
+    #mobile-menu {
+        background-color: var(--black-bg-color);
+        position: absolute;
+        z-index: 11;
+        width: 100%;
+        left: 0px;
+        padding: 10px;
+    }
+
+    #mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+    }
+
+    #menu-harmburger:hover {
+        cursor: pointer;
+    }
+
+    .active {
+        border: 0px;
+        border-radius: 10px;
+        width: 100%;
+        padding: 10px;
+        font-size: 20px;
+        background-color: var(--red-secondary-color);
+    }
+
+    .active:hover {
+        color: beige;
+    }
+    
+    .active-remove {
+        border: 0px;
+        font-size: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .active-remove:hover {
+        background-color: var(--red-primary-color);
+    }
+    
 }
